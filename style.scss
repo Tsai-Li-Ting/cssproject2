@@ -91,15 +91,13 @@ $font-size-24: 24px;
 
 .container{
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;   
 }
-
-
 
 .banner{
     background-image: url(img/banner.png);
     height: 958px;
-    max-width: 100%;
+    max-width: 100%;        
     .text{
         width: 304px;
         height: 342px;
@@ -127,7 +125,7 @@ $font-size-24: 24px;
             justify-content: center;
             line-height: 32px;
         }
-    }
+    }    
 }
 
 .about{
@@ -143,13 +141,15 @@ $font-size-24: 24px;
         height: 384px;
         padding: 40px 0 20px 0;
     }
-    p{
+    li{
+        &:nth-child(4){
+            width: 384px;
+            border-top: 1px solid ;
+        }
+        padding-bottom: 8px; 
         font-size: $font-size-24;
         line-height: 36px;
         font-weight: bold;
-    }
-    li{
-        padding-bottom: 8px;
     }
     
     

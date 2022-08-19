@@ -133,11 +133,13 @@ table {
   height: 384px;
   padding: 40px 0 20px 0;
 }
-.about p {
+.about li {
+  padding-bottom: 8px;
   font-size: 24px;
   line-height: 36px;
   font-weight: bold;
 }
-.about li {
-  padding-bottom: 8px;
+.about li:nth-child(4) {
+  width: 384px;
+  border-top: 1px solid;
 }/*# sourceMappingURL=style.css.map */

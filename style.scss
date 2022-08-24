@@ -61,6 +61,11 @@ $font-size-80: 80px;
 $font-size-64: 64px;
 $font-size-24: 24px;
 
+*, body{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
 .column{
     display: flex;
     flex-direction: column;
@@ -89,9 +94,14 @@ $font-size-24: 24px;
     align-items: center;
 }
 
-.container{
+*{
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;   
+}
+
+.container{
+    max-width: 412px;
+    margin: auto 0;
 }
 
 .banner{
@@ -144,6 +154,7 @@ $font-size-24: 24px;
     li{
         &:nth-child(4){
             width: 384px;
+            margin: 0 auto;
             border-top: 1px solid ;
         }
         padding-bottom: 8px; 

@@ -55,6 +55,11 @@ table {
 }
 
 /* css reset */
+*, body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
 .column {
   display: flex;
   flex-direction: column;
@@ -83,9 +88,14 @@ table {
   align-items: center;
 }
 
-.container {
+* {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 412px;
+  margin: auto 0;
 }
 
 .banner {
@@ -141,5 +151,6 @@ table {
 }
 .about li:nth-child(4) {
   width: 384px;
+  margin: 0 auto;
   border-top: 1px solid;
 }/*# sourceMappingURL=style.css.map */

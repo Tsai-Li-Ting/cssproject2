@@ -152,5 +152,9 @@ table {
 .about li:nth-child(4) {
   width: 384px;
   margin: 0 auto;
+  padding-bottom: 24px;
   border-top: 1px solid;
+}
+.about li span {
+  background: #000;
 }/*# sourceMappingURL=style.css.map */

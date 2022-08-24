@@ -155,12 +155,16 @@ $font-size-24: 24px;
         &:nth-child(4){
             width: 384px;
             margin: 0 auto;
+            padding-bottom: 24px;
             border-top: 1px solid ;
         }
         padding-bottom: 8px; 
         font-size: $font-size-24;
         line-height: 36px;
         font-weight: bold;
+        span{
+            background: #000;
+        }
     }
     
     

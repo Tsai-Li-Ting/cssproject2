@@ -60,13 +60,15 @@ table {
   font-family: "Roboto", sans-serif;
 }
 
-.column {
+.d-flex {
   display: flex;
+}
+
+.column {
   flex-direction: column;
 }
 
 .row {
-  display: flex;
   flex-direction: row;
 }
 
@@ -88,9 +90,13 @@ table {
   align-items: center;
 }
 
-* {
+*, body {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: bold;
+  text-align: center;
 }
 
 .container {
@@ -98,23 +104,38 @@ table {
   margin: auto 0;
 }
 
+.chinese {
+  font-size: 20px;
+}
+.chinese:nth-child(2) {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 64px;
+  line-height: 1.75;
+}
+
+.black {
+  background-color: #000;
+  color: #fff;
+}
+
 .banner {
   background-image: url(img/banner.png);
   height: 958px;
   max-width: 100%;
 }
-.banner .text {
+.banner .title {
   width: 304px;
   height: 342px;
   color: #fff;
-  font-size: 24px;
-  line-height: 32px;
 }
-.banner .text .left {
+.banner .title .left {
   display: flex;
   justify-content: start;
 }
-.banner .text .big {
+.banner .title .big {
   display: flex;
   justify-content: center;
   letter-spacing: 0px;
@@ -123,38 +144,73 @@ table {
   font-weight: 900;
   line-height: 106px;
 }
-.banner .text .center {
+.banner .title .center {
   padding: 32px 0px 40px 13px;
   display: flex;
   justify-content: center;
-  line-height: 32px;
 }
 
 .about {
   height: 992px;
   padding: 56px 0;
-  text-align: center;
-}
-.about h2 {
-  font-size: 64px;
 }
 .about img {
   width: 384px;
   height: 384px;
-  padding: 40px 0 20px 0;
 }
 .about li {
+  font-size: 0;
+  line-height: 1.75;
   padding-bottom: 8px;
   font-size: 24px;
-  line-height: 36px;
-  font-weight: bold;
+}
+.about li:nth-child(3) {
+  padding-bottom: 24px;
 }
 .about li:nth-child(4) {
+  padding-top: 28px;
   width: 384px;
   margin: 0 auto;
-  padding-bottom: 24px;
   border-top: 1px solid;
 }
+.about li .circle {
+  display: inline-block;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  background-color: #891818;
+  vertical-align: middle;
+  margin-right: 16px;
+}
 .about li span {
-  background: #000;
+  vertical-align: middle;
+  line-height: 2;
+}
+
+.brand {
+  padding: 56px 0;
+}
+.brand .en {
+  padding: 12px 0 32px 0;
+}
+.brand .chinese {
+  padding-bottom: 48px;
+}
+.brand img {
+  padding: 20px 0;
+}
+
+.otherWorks {
+  padding: 64px 0;
+}
+.otherWorks .images {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  padding-top: 48px;
+}
+
+.contact {
+  margin-top: 80px;
+  padding: 64px 0;
 }/*# sourceMappingURL=style.css.map */
